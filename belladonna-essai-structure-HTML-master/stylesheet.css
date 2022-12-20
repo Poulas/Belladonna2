@@ -1,0 +1,255 @@
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(50deg, #060918 0%, rgb(21, 30, 77) 100%);
+  font-family: Arial;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; 
+  margin: 0; 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #0D1330;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0D1330;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content .header {
+  background: #0D1330;
+  padding: 16px;
+  color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #0D1330;
+  height: 540px;
+}
+
+
+.column a {
+  float: none;
+  color: #808080;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.column a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+.burgerMenu {
+
+  height: 2em;
+  width: auto;
+}
+
+
+
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #808080;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+body {
+  background: linear-gradient(50deg, rgb(0, 0, 0) 0%, rgb(21, 30, 77) 100%);
+}
+
+#Header {
+
+margin-left: 10em;
+margin-right: 10em;
+margin-top: -5em;
+background: linear-gradient(50deg, rgb(0, 0, 0) 0%, rgb(21, 30, 77) 100%);
+height: 15em;
+border-radius: 2em;
+display: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 9em;
+}
+
+
+
+#Titre {
+  display: flex;
+justify-content: center;
+color: white;
+margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.block {
+  width: 30em;
+  max-width: 50em;
+  height: 25em;
+  border-radius: 2em;
+  margin-top: 15em;
+  margin-bottom: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: ivory;
+}
+
+
+img {
+  width: 100%;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-left: 0.5em;
+}
+
+p {
+  color: white;
+font-size: 1em;
+}
+
+h3:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease 0.5s;
+}
+
